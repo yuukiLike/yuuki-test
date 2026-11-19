@@ -4,21 +4,24 @@
 
 ## 样本
 
-| 生成日期 | SVG 预览 | Codex 模型 | 推理强度 | 原始提示词 |
-| --- | --- | --- | --- | --- |
-| 2026-10-27 | <a href="./samples/pelican-bicycle.svg"><img src="./samples/pelican-bicycle.svg" width="220" alt="骑自行车的鹈鹕"></a> | `gpt-6.1-terra` | `max` | 画一个鹈鹕自行车svg |
-| 2026-10-31 | <a href="./samples/pelican-bicycle-2026-10-31.svg"><img src="./samples/pelican-bicycle-2026-10-31.svg" width="220" alt="鹈鹕骑行日记，2026-10-31"></a> | `gpt-6.1-sol` | `max` | 使用 svg 绘制一次鹈鹕自行车，写入当前的日期然后 $push |
-| 2026-11-02 | <a href="./samples/pelican-bicycle-2026-11-02.svg"><img src="./samples/pelican-bicycle-2026-11-02.svg" width="220" alt="鹈鹕的海边骑行"></a> | `gpt-6-astra` | `max` | 用 svg 绘制一个鹈鹕骑自行车 |
-| 2026-11-14 | <a href="./samples/pelican-bicycle-2026-11-14.svg"><img src="./samples/pelican-bicycle-2026-11-14.svg" width="220" alt="海风里的鹈鹕骑手"></a> | `gpt-6-astra` | `max` | 用 svg 实现一个鹈鹕骑自行车并且 push |
-| 2026-11-14 | <a href="./samples/pelican-bicycle-2026-11-14-v2.svg"><img src="./samples/pelican-bicycle-2026-11-14-v2.svg" width="220" alt="骑着金色自行车的鹈鹕"></a> | `gpt-6.1-sol` | `max` | 使用 svg 生成鹈鹕骑自行车 |
-| 2026-11-18 | <a href="./samples/pelican-on-a-bicycle.svg"><img src="./samples/pelican-on-a-bicycle.svg" width="220" alt="鹈鹕骑自行车"></a> | `gpt-6.2-sol` | `max` | 用 svg 绘制鹈鹕骑自行车。 |
-| 2026-11-18 | <a href="./samples/pelican-cycling.svg"><img src="./samples/pelican-cycling.svg" width="220" alt="海风里的骑手"></a> | `gpt-6.2-astra` | `max` | 不要参考以前的内容。<br>用 SVG 绘制骑自行车的鹈鹕 |
-| 2026-11-18 | <a href="./samples/pelican-bicycle-2026-11-18-sol.svg"><img src="./samples/pelican-bicycle-2026-11-18-sol.svg" width="220" alt="顺风骑行"></a> | `gpt-6.2-sol` | `max` | 忽略现有项目参考，使用 6.2 sol 绘制一个 svg 鹈鹕骑自行车。<br><br>完成绘制后，极简化整体项目的结构，然后在 readme 中补上之前漏填写上去的 readme.md |
+调用入口与模型分开记录：`Codex` 指通过 Codex 客户端生成，`OpenAI API（Pi）` 指 Pi 通过 OpenAI Responses API 生成。仅凭模型名不能判断调用入口。
+
+| 生成日期 | SVG 预览 | 调用入口 | 模型 | 推理强度 | 原始提示词 |
+| --- | --- | --- | --- | --- | --- |
+| 2026-10-27 | <a href="./samples/pelican-bicycle.svg"><img src="./samples/pelican-bicycle.svg" width="220" alt="骑自行车的鹈鹕"></a> | Codex | `gpt-6.1-terra` | `max` | 画一个鹈鹕自行车svg |
+| 2026-10-31 | <a href="./samples/pelican-bicycle-2026-10-31.svg"><img src="./samples/pelican-bicycle-2026-10-31.svg" width="220" alt="鹈鹕骑行日记，2026-10-31"></a> | Codex | `gpt-6.1-sol` | `max` | 使用 svg 绘制一次鹈鹕自行车，写入当前的日期然后 $push |
+| 2026-11-02 | <a href="./samples/pelican-bicycle-2026-11-02.svg"><img src="./samples/pelican-bicycle-2026-11-02.svg" width="220" alt="鹈鹕的海边骑行"></a> | Codex | `gpt-6-astra` | `max` | 用 svg 绘制一个鹈鹕骑自行车 |
+| 2026-11-14 | <a href="./samples/pelican-bicycle-2026-11-14.svg"><img src="./samples/pelican-bicycle-2026-11-14.svg" width="220" alt="海风里的鹈鹕骑手"></a> | Codex | `gpt-6-astra` | `max` | 用 svg 实现一个鹈鹕骑自行车并且 push |
+| 2026-11-14 | <a href="./samples/pelican-bicycle-2026-11-14-v2.svg"><img src="./samples/pelican-bicycle-2026-11-14-v2.svg" width="220" alt="骑着金色自行车的鹈鹕"></a> | Codex | `gpt-6.1-sol` | `max` | 使用 svg 生成鹈鹕骑自行车 |
+| 2026-11-18 | <a href="./samples/pelican-on-a-bicycle.svg"><img src="./samples/pelican-on-a-bicycle.svg" width="220" alt="鹈鹕骑自行车"></a> | Codex | `gpt-6.2-sol` | `max` | 用 svg 绘制鹈鹕骑自行车。 |
+| 2026-11-18 | <a href="./samples/pelican-cycling.svg"><img src="./samples/pelican-cycling.svg" width="220" alt="海风里的骑手"></a> | Codex | `gpt-6.2-astra` | `max` | 不要参考以前的内容。<br>用 SVG 绘制骑自行车的鹈鹕 |
+| 2026-11-18 | <a href="./samples/pelican-bicycle-2026-11-18-sol.svg"><img src="./samples/pelican-bicycle-2026-11-18-sol.svg" width="220" alt="顺风骑行"></a> | Codex | `gpt-6.2-sol` | `max` | 忽略现有项目参考，使用 6.2 sol 绘制一个 svg 鹈鹕骑自行车。<br><br>完成绘制后，极简化整体项目的结构，然后在 readme 中补上之前漏填写上去的 readme.md |
+| 2026-11-19 | <a href="./samples/pelican-bicycle-animation-2026-11-19.svg"><img src="./samples/pelican-bicycle-animation-2026-11-19.svg" width="220" alt="海堤晨骑，鹈鹕骑自行车的循环动画"></a> | OpenAI API（Pi） | `gpt-6.2-sol` | `max` | 现在我们还需要区分是否是 openAI API 调用的还是 codex 调用的。<br><br>现在生成一个鹈鹕骑自行车动画。 |
 
 <details>
 <summary>样本说明与记录来源</summary>
 
-模型与推理强度来自本机 Codex 会话日志。按写入 SVG 的工具调用核对对应生成轮次的 `turn_context.model` 与 `turn_context.effort`。
+Codex 样本按写入 SVG 的工具调用核对本机会话日志中的 `turn_context.model` 与 `turn_context.effort`。`Codex` 标签只标识客户端，不推断其底层接口或认证方式。
 
 | 样本 | 会话 ID 前缀 | 生成轮次 ID 前缀 |
 | --- | --- | --- |
@@ -36,7 +39,8 @@
 - **2026-11-14** 两版属于同一会话。第一版参考同一会话生成的位图，预览后修订一次局部线条。第二版重新手写 SVG，使用当时已有的对话上下文，一次绘制完成。两版交付前均检查结构、引用和渲染。
 - **11 月 18 日的 `pelican-on-a-bicycle.svg`** 于提交 `82fc87b` 首次归档，模型和原始提示词已根据生成记录补录。
 - **11 月 18 日的 `pelican-cycling.svg`** 在用户续接“继续完成测试”后生成，预览后调整踏板位置和自适应视口。关联 PNG 收录于当时的提交。[归档预览](https://github.com/yuukiLike/yuuki-test/blob/13cbc50a815aeed319e884ea113387b794185eff/pelican-cycling-preview.png)
-- **本次 Sol 样本《顺风骑行》** 属于连续对话。绘图和浏览器预览在新建临时目录完成，随后读取仓库用于归档。首稿通过 XML、内部引用和渲染检查。
+- **11 月 18 日的《顺风骑行》** 属于连续对话。绘图和浏览器预览在新建临时目录完成，随后读取仓库用于归档。首稿通过 XML、内部引用和渲染检查。
+- **11 月 19 日的《海堤晨骑》** 在仓库内生成，不属于独立复测。Pi 会话日志的助手消息记录 `provider=openai`、`api=openai-responses` 和 `model=gpt-6.2-sol`，推理强度记录为 `thinkingLevel=max`。
 
 </details>
 
