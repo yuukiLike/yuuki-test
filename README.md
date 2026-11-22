@@ -1,10 +1,10 @@
 # Yuuki AI 能力测试
 
-保存各模型绘制骑行鹈鹕的原始结果，便于回看与比较。所有 SVG 位于 [samples/](./samples/)，点击表中缩略图可打开原图。日期均为 Asia/Shanghai（UTC+08:00）。
+记录各模型的基准测试结果。日期均为 `Asia/Shanghai (UTC+08:00)`。
 
-## 样本
+## 鹈鹕骑自行车（SVG）
 
-调用入口与模型分开记录：`Codex` 指通过 Codex 客户端生成，`OpenAI API（Pi）` 指 Pi 通过 OpenAI Responses API 生成。仅凭模型名不能判断调用入口。
+所有 SVG 位于 [`samples/`](./samples/)，复测流程见 [`skills/pelican-test/SKILL.md`](./skills/pelican-test/SKILL.md)（支持 `/pelican-test static` 与 `/pelican-test anim`）。
 
 | 生成日期 | SVG 预览 | 调用入口 | 模型 | 推理强度 | 原始提示词 |
 | --- | --- | --- | --- | --- | --- |
@@ -18,45 +18,9 @@
 | 2026-11-18 | <a href="./samples/pelican-bicycle-2026-11-18-sol.svg"><img src="./samples/pelican-bicycle-2026-11-18-sol.svg" width="220" alt="顺风骑行"></a> | Codex | `gpt-6.2-sol` | `max` | 忽略现有项目参考，使用 6.2 sol 绘制一个 svg 鹈鹕骑自行车。<br><br>完成绘制后，极简化整体项目的结构，然后在 readme 中补上之前漏填写上去的 readme.md |
 | 2026-11-19 | <a href="./samples/pelican-bicycle-animation-2026-11-19.svg"><img src="./samples/pelican-bicycle-animation-2026-11-19.svg" width="220" alt="海堤晨骑，鹈鹕骑自行车的循环动画"></a> | OpenAI API（Pi） | `gpt-6.2-sol` | `max` | 现在我们还需要区分是否是 openAI API 调用的还是 codex 调用的。<br><br>现在生成一个鹈鹕骑自行车动画。 |
 
-<details>
-<summary>样本说明与记录来源</summary>
+## 其他测试与提示词（`prompts/`）
 
-Codex 样本按写入 SVG 的工具调用核对本机会话日志中的 `turn_context.model` 与 `turn_context.effort`。`Codex` 标签只标识客户端，不推断其底层接口或认证方式。
-
-| 样本 | 会话 ID 前缀 | 生成轮次 ID 前缀 |
+| 提示词文件 | 主题与测试内容 | 对应产物 |
 | --- | --- | --- |
-| 2026-10-27 原始样本 | `01a17adc` | `01a17adc-732d` |
-| 2026-10-31 | `01a191e4` | `01a191ed-c2a8` |
-| 2026-11-02 | `01a19ac9` | `01a19ac9-c81f` |
-| 2026-11-14 第一版 | `01a1d706` | `01a1d70b-92b8` |
-| 2026-11-14 第二版 | `01a1d706` | `01a1d711-5400` |
-| `pelican-on-a-bicycle.svg` | `01a1eb19` | `01a1eb19-45c6` |
-| `pelican-cycling.svg` | `01a1eb32` | `01a1ec7a-2eb6` |
-| `pelican-bicycle-2026-11-18-sol.svg` | `01a1eb32` | `01a1ec94-5009` |
-
-- **2026-10-27** 的日期、模型和提示词来自生成会话，10 月 31 日是首次提交的归档日期。
-- **2026-10-31 与 2026-11-02** 均为一次手写 SVG，交付前检查画面，无用户追问或人工修改。前者按上海时区在画面标注日期，后者未使用参考素材。
-- **2026-11-14** 两版属于同一会话。第一版参考同一会话生成的位图，预览后修订一次局部线条。第二版重新手写 SVG，使用当时已有的对话上下文，一次绘制完成。两版交付前均检查结构、引用和渲染。
-- **11 月 18 日的 `pelican-on-a-bicycle.svg`** 于提交 `82fc87b` 首次归档，模型和原始提示词已根据生成记录补录。
-- **11 月 18 日的 `pelican-cycling.svg`** 在用户续接“继续完成测试”后生成，预览后调整踏板位置和自适应视口。关联 PNG 收录于当时的提交。[归档预览](https://github.com/yuukiLike/yuuki-test/blob/13cbc50a815aeed319e884ea113387b794185eff/pelican-cycling-preview.png)
-- **11 月 18 日的《顺风骑行》** 属于连续对话。绘图和浏览器预览在新建临时目录完成，随后读取仓库用于归档。首稿通过 XML、内部引用和渲染检查。
-- **11 月 19 日的《海堤晨骑》** 在仓库内生成，不属于独立复测。Pi 会话日志的助手消息记录 `provider=openai`、`api=openai-responses` 和 `model=gpt-6.2-sol`，推理强度记录为 `thinkingLevel=max`。
-
-</details>
-
-<details>
-<summary>独立复测流程</summary>
-
-1. 新建对话，将工作目录设为仓库外的本机空目录。保持记忆关闭，并固定模型之外的比较条件，包括客户端版本、推理强度、工具、技能、全局指令和检查预算。
-2. 发送下面的固定提示词。生成后保存首稿，另存修正版并记录次数。
-3. 在另一条对话或由人工归档，补录日期与时区、产品、模型和推理强度的核对来源、完整提示词、输入素材、隔离条件、追问及人工观察。
-
-```text
-使用 svg 生成鹈鹕骑自行车，保存为当前目录的 pelican-bicycle.svg。
-
-这是一轮独立测试。不要读取历史对话、记忆、归档仓库或其他测试结果，不要检索已有实现或参考图片。只使用 SVG 矢量元素；可以检查结构并预览本轮产物，记录自行修改次数。完成后停止，由我另行归档。
-```
-
-严格隔离应使用只暴露本轮目录和运行依赖的容器或受限环境，并先验证旧文件不可读。Codex 的工作区写入权限和实际读取边界需要分别核对。[官方沙箱说明](https://learn.chatgpt.com/docs/sandboxing#configure-defaults)
-
-</details>
+| [`prompts/melon-jellyy.txt`](./prompts/melon-jellyy.txt) | **Melon Jelly**：原生 WebGPU + WGSL 3D 软体物理西瓜果冻交互模拟（XPBD 体积保持、折射/吸收渲染） | [`melon-jellyy.html`](./melon-jellyy.html) |
+| [`prompts/wind-valley-town.txt`](./prompts/wind-valley-town.txt) | **《风之谷物语》**：Three.js + GLSL 治愈系 3D 奇幻小镇（8 栋程序化建筑、动态水车/风车、昼夜变化与电影镜头） | [`3d-samples/wind-valley-town/`](./3d-samples/wind-valley-town/) |
