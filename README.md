@@ -19,6 +19,7 @@
 | 2026-11-19 | <a href="./samples/pelican-bicycle-animation-2026-11-19.svg"><img src="./samples/pelican-bicycle-animation-2026-11-19.svg" width="220" alt="海堤晨骑，鹈鹕骑自行车的循环动画"></a> | OpenAI API（Pi） | `gpt-6.2-sol` | `max` | 现在我们还需要区分是否是 openAI API 调用的还是 codex 调用的。<br><br>现在生成一个鹈鹕骑自行车动画。 |
 | 2026-11-23 | <a href="./samples/pelican-bicycle-2026-11-23-claude-opus-5.5.svg"><img src="./samples/pelican-bicycle-2026-11-23-claude-opus-5.5.svg" width="220" alt="晴空下的单翼骑手"></a> | Antigravity | `Claude Opus 5.5` | `high` | /pelican-test |
 | 2026-11-23 | <a href="./samples/pelican-bicycle-animation-2026-11-23-claude-opus-5.5.svg"><img src="./samples/pelican-bicycle-animation-2026-11-23-claude-opus-5.5.svg" width="220" alt="海边黄昏骑行，鹈鹕骑自行车的循环动画"></a> | Antigravity | `Claude Opus 5.5` | `high` | /pelican-test animate |
+| 2026-11-23 | <a href="./samples/pelican-bicycle-2026-11-23-gemini-4-hydrogen.svg"><img src="./samples/pelican-bicycle-2026-11-23-gemini-4-hydrogen.svg" width="220" alt="海风下的鹈鹕骑手"></a> | Antigravity | `Gemini 4 Hydrogen` | `medium` | /pelican-test |
 
 ## 其他测试与提示词（`prompts/`）
 
