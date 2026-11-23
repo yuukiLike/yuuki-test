@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#e8f7ff"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dfe4ea"/>
+    </linearGradient>
+    <linearGradient id="pouch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#f07b2a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <circle cx="345" cy="50" r="24" fill="#ffe066"/>
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="70" cy="50" rx="28" ry="10"/>
+    <ellipse cx="90" cy="44" rx="18" ry="10"/>
+    <ellipse cx="250" cy="30" rx="22" ry="7"/>
+  </g>
+  <rect y="268" width="400" height="32" fill="#9ccc65"/>
+  <line x1="0" y1="270" x2="400" y2="270" stroke="#7cb342" stroke-width="3"/>
+  <g stroke="#ffffff" stroke-width="2" opacity="0.6">
+    <line x1="20" y1="285" x2="50" y2="285"/>
+    <line x1="160" y1="290" x2="190" y2="290"/>
+    <line x1="320" y1="284" x2="350" y2="284"/>
+  </g>
+
+  <!-- Wheels -->
+  <g fill="none" stroke="#2d3436">
+    <circle cx="120" cy="220" r="48" stroke-width="6"/>
+    <circle cx="290" cy="220" r="48" stroke-width="6"/>
+    <circle cx="120" cy="220" r="44" stroke="#636e72" stroke-width="1.5"/>
+    <circle cx="290" cy="220" r="44" stroke="#636e72" stroke-width="1.5"/>
+  </g>
+  <g stroke="#95a5a6" stroke-width="1">
+    <g transform="translate(120 220)">
+      <line x1="-44" y1="0" x2="44" y2="0"/>
+      <line x1="0" y1="-44" x2="0" y2="44"/>
+      <line x1="-31" y1="-31" x2="31" y2="31"/>
+      <line x1="-31" y1="31" x2="31" y2="-31"/>
+      <line x1="-17" y1="-41" x2="17" y2="41"/>
+      <line x1="-41" y1="-17" x2="41" y2="17"/>
+      <line x1="-17" y1="41" x2="17" y2="-41"/>
+      <line x1="-41" y1="17" x2="41" y2="-17"/>
+    </g>
+    <g transform="translate(290 220)">
+      <line x1="-44" y1="0" x2="44" y2="0"/>
+      <line x1="0" y1="-44" x2="0" y2="44"/>
+      <line x1="-31" y1="-31" x2="31" y2="31"/>
+      <line x1="-31" y1="31" x2="31" y2="-31"/>
+      <line x1="-17" y1="-41" x2="17" y2="41"/>
+      <line x1="-41" y1="-17" x2="41" y2="17"/>
+      <line x1="-17" y1="41" x2="17" y2="-41"/>
+      <line x1="-41" y1="17" x2="41" y2="-17"/>
+    </g>
+  </g>
+  <circle cx="120" cy="220" r="5" fill="#2d3436"/>
+  <circle cx="290" cy="220" r="5" fill="#2d3436"/>
+
+  <!-- Frame -->
+  <g stroke="#e74c3c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="120,220 195,225 175,152 120,220"/>
+    <line x1="175" y1="152" x2="268" y2="150"/>
+    <line x1="195" y1="225" x2="274" y2="168"/>
+    <line x1="266" y1="144" x2="276" y2="172"/>
+    <line x1="276" y1="172" x2="290" y2="220"/>
+  </g>
+  <!-- Seat post & saddle -->
+  <line x1="175" y1="152" x2="172" y2="140" stroke="#636e72" stroke-width="4"/>
+  <path d="M152 138 Q172 132 190 138 Q172 144 152 138 Z" fill="#2d3436"/>
+  <!-- Stem & handlebar -->
+  <line x1="266" y1="144" x2="263" y2="128" stroke="#636e72" stroke-width="4" stroke-linecap="round"/>
+  <path d="M258 128 L280 126 Q290 126 290 135" fill="none" stroke="#2d3436" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Chainring, chain, crank -->
+  <circle cx="195" cy="225" r="13" fill="none" stroke="#7f8c8d" stroke-width="3"/>
+  <path d="M195 212 L120 214 M195 238 L120 226" stroke="#7f8c8d" stroke-width="1.5" fill="none"/>
+  <circle cx="120" cy="220" r="7" fill="none" stroke="#7f8c8d" stroke-width="2"/>
+
+  <!-- Far leg (behind) -->
+  <g stroke="#e67e22" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.75">
+    <polyline points="182,140 200,178 180,206"/>
+  </g>
+  <line x1="195" y1="225" x2="180" y2="207" stroke="#2d3436" stroke-width="4" stroke-linecap="round"/>
+  <rect x="172" y="203" width="16" height="5" rx="1" fill="#2d3436"/>
+  <path d="M180 206 l-10 3 l4 -6 l4 4 l6 -3 z" fill="#e67e22" opacity="0.75"/>
+
+  <!-- Tail -->
+  <path d="M140 118 L108 104 L114 116 L102 120 L116 126 L110 136 L146 132 Z" fill="#ecf0f1" stroke="#b2bec3" stroke-width="1.5"/>
+
+  <!-- Body -->
+  <ellipse cx="180" cy="118" rx="46" ry="30" fill="url(#body)" stroke="#b2bec3" stroke-width="1.5"/>
+
+  <!-- Neck -->
+  <path d="M206 100 C214 80 210 70 222 56 L240 62 C230 74 232 88 224 110 Z" fill="url(#body)" stroke="#b2bec3" stroke-width="1.5"/>
+
+  <!-- Head -->
+  <circle cx="234" cy="56" r="16" fill="#ffffff" stroke="#b2bec3" stroke-width="1.5"/>
+  <path d="M222 44 Q230 36 242 42" fill="none" stroke="#f5d76e" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Beak & pouch -->
+  <path d="M246 54 L330 72 L326 78 L248 64 Z" fill="#f39c12" stroke="#d35400" stroke-width="1.2"/>
+  <path d="M248 64 L326 78 Q300 108 262 96 Q246 88 248 64 Z" fill="url(#pouch)" stroke="#d35400" stroke-width="1.2"/>
+  <path d="M326 72 l8 4 l-8 2 z" fill="#d35400"/>
+
+  <!-- Eye -->
+  <circle cx="238" cy="52" r="3.5" fill="#2d3436"/>
+  <circle cx="239.2" cy="50.8" r="1.1" fill="#ffffff"/>
+
+  <!-- Wing reaching to handlebar -->
+  <path d="M160 104 C186 92 216 100 236 112 C252 120 268 124 284 128 C270 134 252 134 236 130 C214 136 184 136 160 124 Z" fill="#f5f6fa" stroke="#b2bec3" stroke-width="1.5"/>
+  <path d="M176 122 Q196 128 220 126 M184 112 Q204 114 226 120" fill="none" stroke="#c8d0d6" stroke-width="1.2"/>
+  <path d="M150 112 Q156 104 164 106 L162 124 Q152 122 150 112 Z" fill="#2d3436" opacity="0.8"/>
+
+  <!-- Near leg (front) -->
+  <line x1="195" y1="225" x2="210" y2="243" stroke="#2d3436" stroke-width="4" stroke-linecap="round"/>
+  <rect x="202" y="241" width="16" height="5" rx="1" fill="#2d3436"/>
+  <g stroke="#f39c12" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="192,142 228,180 210,240"/>
+  </g>
+  <path d="M210 240 l14 -2 l-4 6 l-6 -1 l-6 4 z" fill="#f39c12" stroke="#d35400" stroke-width="1"/>
+</svg>

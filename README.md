@@ -17,6 +17,7 @@
 | 2026-11-18 | <a href="./samples/pelican-cycling.svg"><img src="./samples/pelican-cycling.svg" width="220" alt="海风里的骑手"></a> | Codex | `gpt-6.2-astra` | `max` | 不要参考以前的内容。<br>用 SVG 绘制骑自行车的鹈鹕 |
 | 2026-11-18 | <a href="./samples/pelican-bicycle-2026-11-18-sol.svg"><img src="./samples/pelican-bicycle-2026-11-18-sol.svg" width="220" alt="顺风骑行"></a> | Codex | `gpt-6.2-sol` | `max` | 忽略现有项目参考，使用 6.2 sol 绘制一个 svg 鹈鹕骑自行车。<br><br>完成绘制后，极简化整体项目的结构，然后在 readme 中补上之前漏填写上去的 readme.md |
 | 2026-11-19 | <a href="./samples/pelican-bicycle-animation-2026-11-19.svg"><img src="./samples/pelican-bicycle-animation-2026-11-19.svg" width="220" alt="海堤晨骑，鹈鹕骑自行车的循环动画"></a> | OpenAI API（Pi） | `gpt-6.2-sol` | `max` | 现在我们还需要区分是否是 openAI API 调用的还是 codex 调用的。<br><br>现在生成一个鹈鹕骑自行车动画。 |
+| 2026-11-23 | <a href="./samples/pelican-bicycle-2026-11-23-claude-opus-5.5.svg"><img src="./samples/pelican-bicycle-2026-11-23-claude-opus-5.5.svg" width="220" alt="晴空下的单翼骑手"></a> | Antigravity | `Claude Opus 5.5` | `high` | /pelican-test |
 
 ## 其他测试与提示词（`prompts/`）
 
