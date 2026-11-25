@@ -22,6 +22,7 @@
 | 2026-11-23 | <a href="./samples/pelican-bicycle-2026-11-23-gemini-4-hydrogen.svg"><img src="./samples/pelican-bicycle-2026-11-23-gemini-4-hydrogen.svg" width="220" alt="海风下的鹈鹕骑手"></a> | Antigravity | `Gemini 4 Hydrogen` | `medium` | /pelican-test |
 | 2026-11-23 | <a href="./samples/pelican-bicycle-2026-11-23-gemini-4-hydrogen-v2.svg"><img src="./samples/pelican-bicycle-2026-11-23-gemini-4-hydrogen-v2.svg" width="220" alt="海岸栈道上的单车鹈鹕"></a> | Antigravity | `Gemini 4 Hydrogen` | `xhigh` | /pelican-test |
 | 2026-11-24 | <a href="./samples/pelican-bicycle-2026-11-24-gemini-4-neon.svg"><img src="./samples/pelican-bicycle-2026-11-24-gemini-4-neon.svg" width="220" alt="海滨木栈道上的单车鹈鹕"></a> | Antigravity | `Gemini 4 Neon` | `medium` | /pelican-test |
+| 2026-11-25 | <a href="./samples/pelican-bicycle-2026-11-25-gemini-4-carbon.svg"><img src="./samples/pelican-bicycle-2026-11-25-gemini-4-carbon.svg" width="220" alt="海堤晨光里的鲜鱼单车鹈鹕"></a> | Antigravity | `Gemini 4 Carbon` | `high` | /pelican-test |
 | 2026-11-25 | <a href="./samples/pelican-bicycle-2026-11-25-gemini-4-neon-low.svg"><img src="./samples/pelican-bicycle-2026-11-25-gemini-4-neon-low.svg" width="220" alt="晴日海滨的红车鹈鹕"></a> | Antigravity | `Gemini 4 Neon` | `low` | /pelican-test |
 | 2026-11-25 | <a href="./samples/pelican-bicycle-2026-11-25-gemini-4-neon.svg"><img src="./samples/pelican-bicycle-2026-11-25-gemini-4-neon.svg" width="220" alt="晴空海岸的复古单车鹈鹕"></a> | Antigravity | `Gemini 4 Neon` | `medium` | /pelican-test |
 
