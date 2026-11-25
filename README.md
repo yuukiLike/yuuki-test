@@ -2,6 +2,8 @@
 
 记录各模型的基准测试结果。日期均为 `Asia/Shanghai (UTC+08:00)`。
 
+> **`agy` 正常使用参考条件（仅基于个人实测案例）**：保证网络不处于受限/低数据模式（如 macOS 连 iPhone 热点时关闭「低数据模式」消除 `constrained` 标记），并配合屏蔽 QUIC、关闭自动断连的固定稳定代理节点，确保 60s+ 静默 TCP 长流不被掐断（详见 [`docs/agy-issues.md`](./docs/agy-issues.md)）。
+
 ## 鹈鹕骑自行车（SVG）
 
 所有 SVG 位于 [`samples/`](./samples/)，复测流程见 [`skills/pelican-test/SKILL.md`](./skills/pelican-test/SKILL.md)（支持 `/pelican-test static` 与 `/pelican-test anim`）。
