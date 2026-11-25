@@ -28,6 +28,7 @@
 | 2026-11-25 | <a href="./samples/pelican-bicycle-2026-11-25-gemini-4-neon-low.svg"><img src="./samples/pelican-bicycle-2026-11-25-gemini-4-neon-low.svg" width="220" alt="晴日海滨的红车鹈鹕"></a> | Antigravity | `Gemini 4 Neon` | `low` | /pelican-test |
 | 2026-11-25 | <a href="./samples/pelican-bicycle-2026-11-25-gemini-4-neon.svg"><img src="./samples/pelican-bicycle-2026-11-25-gemini-4-neon.svg" width="220" alt="晴空海岸的复古单车鹈鹕"></a> | Antigravity | `Gemini 4 Neon` | `medium` | /pelican-test |
 | 2026-11-25 | <a href="./samples/pelican-bicycle-2026-11-25-gemini-4-neon-v2.svg"><img src="./samples/pelican-bicycle-2026-11-25-gemini-4-neon-v2.svg" width="220" alt="金霞海堤上的单车鹈鹕"></a> | Antigravity | `Gemini 4 Neon` | `xhigh` | /pelican-test |
+| 2026-11-25 | <a href="./samples/pelican-bicycle-animation-2026-11-25-gemini-4-neon.svg"><img src="./samples/pelican-bicycle-animation-2026-11-25-gemini-4-neon.svg" width="220" alt="晴日海岸的单车鹈鹕循环动画"></a> | Antigravity | `Gemini 4 Neon` | `xhigh` | /pelican-test animate |
 
 ## 其他测试与提示词（`prompts/`）
 
